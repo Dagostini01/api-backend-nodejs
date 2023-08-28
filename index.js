@@ -25,7 +25,7 @@ const filtroJwt = (request, response, next) => {
         token = authorization.split(" ")[1]
         console.log(token)
     }
-
+    //incluir try cat
     if(token){
         jwt.verify(token, "ABC123", (err, payload) => {
             if(payload){
